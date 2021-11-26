@@ -29,7 +29,7 @@ jobs:
       - name: Install pnpm
         run: curl -f https://get.pnpm.io/v6.14.js | node - add --global pnpm@6
       - name: Build
-        run: pnpm install && pnpm run build
+        run: pnpm install && pnpm run lint && pnpm run build
       - name: Test Coverage
         run: pnpm run test:ci
       - name: Coveralls Parallel
