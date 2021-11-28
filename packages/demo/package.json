@@ -6,12 +6,12 @@
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "types": "./es/index.d.ts",
+  "dependencies": {
+    "@babel/runtime": "~7.15.0"
+  },
   "devDependencies": {
     "typescript": "^4.5.2",
     "wc-bundler": "^0.10.7"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.15.0"
   },
   "sideEffects": false,
   "author": "何乐 <work@imhele.com> (https://github.com/imhele)",
